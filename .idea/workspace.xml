@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="facd1029-f6ec-47f5-bfb5-a5e3a0329f40" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/service/dao/rating_dao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/models/rating.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/dao/rating_dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/dao/rating_dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/models/rating.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/models/rating.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(app): adding .env support + updating api::main() function" />
     <MESSAGE value="feat(app): updating README.md file" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(app): updating README.md file" />
+    <MESSAGE value="feat(app): adding DAO + Models" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(app): adding DAO + Models" />
   </component>
   <component name="WindowStateProjectService">
     <state x="722" y="75" key="#Build_Tags_&amp;_Vendoring" timestamp="1579522842442">
@@ -149,57 +148,65 @@
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
     <state x="2757" y="-261" key="#com.intellij.fileTypes.FileTypeChooser/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580650088679" />
-    <state x="2596" y="-556" key="CommitChangelistDialog2" timestamp="1580657017817">
+    <state x="2596" y="-556" key="CommitChangelistDialog2" timestamp="1580662293931">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
-    <state x="2596" y="-556" key="CommitChangelistDialog2/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580657017817" />
-    <state width="1161" height="269" key="GridCell.Tab.0.bottom" timestamp="1580661390824">
+    <state x="2596" y="-556" key="CommitChangelistDialog2/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580662293931" />
+    <state width="2322" height="367" key="GridCell.Tab.0.bottom" timestamp="1580663518521">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
+    <state width="2322" height="367" key="GridCell.Tab.0.bottom/1680.-779.3440.1417/0.23.1680.1027@1680.-779.3440.1417" timestamp="1580663518521" />
     <state width="1161" height="269" key="GridCell.Tab.0.bottom/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661390824" />
-    <state width="1161" height="269" key="GridCell.Tab.0.center" timestamp="1580661390823">
+    <state width="2322" height="367" key="GridCell.Tab.0.center" timestamp="1580663518520">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
+    <state width="2322" height="367" key="GridCell.Tab.0.center/1680.-779.3440.1417/0.23.1680.1027@1680.-779.3440.1417" timestamp="1580663518520" />
     <state width="1161" height="269" key="GridCell.Tab.0.center/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661390823" />
-    <state width="1161" height="269" key="GridCell.Tab.0.left" timestamp="1580661390822">
+    <state width="2322" height="367" key="GridCell.Tab.0.left" timestamp="1580663518519">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
+    <state width="2322" height="367" key="GridCell.Tab.0.left/1680.-779.3440.1417/0.23.1680.1027@1680.-779.3440.1417" timestamp="1580663518519" />
     <state width="1161" height="269" key="GridCell.Tab.0.left/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661390822" />
-    <state width="1161" height="269" key="GridCell.Tab.0.right" timestamp="1580661390823">
+    <state width="2322" height="367" key="GridCell.Tab.0.right" timestamp="1580663518520">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
+    <state width="2322" height="367" key="GridCell.Tab.0.right/1680.-779.3440.1417/0.23.1680.1027@1680.-779.3440.1417" timestamp="1580663518520" />
     <state width="1161" height="269" key="GridCell.Tab.0.right/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661390823" />
-    <state width="2322" height="367" key="GridCell.Tab.1.bottom" timestamp="1580661453058">
+    <state width="2322" height="367" key="GridCell.Tab.1.bottom" timestamp="1580663518523">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
+    <state width="2322" height="367" key="GridCell.Tab.1.bottom/1680.-779.3440.1417/0.23.1680.1027@1680.-779.3440.1417" timestamp="1580663518523" />
     <state width="2322" height="367" key="GridCell.Tab.1.bottom/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661453058" />
-    <state width="2322" height="367" key="GridCell.Tab.1.center" timestamp="1580661453058">
+    <state width="2322" height="367" key="GridCell.Tab.1.center" timestamp="1580663518522">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
+    <state width="2322" height="367" key="GridCell.Tab.1.center/1680.-779.3440.1417/0.23.1680.1027@1680.-779.3440.1417" timestamp="1580663518522" />
     <state width="2322" height="367" key="GridCell.Tab.1.center/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661453058" />
-    <state width="2322" height="367" key="GridCell.Tab.1.left" timestamp="1580661453057">
+    <state width="2322" height="367" key="GridCell.Tab.1.left" timestamp="1580663518521">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
+    <state width="2322" height="367" key="GridCell.Tab.1.left/1680.-779.3440.1417/0.23.1680.1027@1680.-779.3440.1417" timestamp="1580663518521" />
     <state width="2322" height="367" key="GridCell.Tab.1.left/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661453057" />
-    <state width="2322" height="367" key="GridCell.Tab.1.right" timestamp="1580661453058">
+    <state width="2322" height="367" key="GridCell.Tab.1.right" timestamp="1580663518522">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
+    <state width="2322" height="367" key="GridCell.Tab.1.right/1680.-779.3440.1417/0.23.1680.1027@1680.-779.3440.1417" timestamp="1580663518522" />
     <state width="2322" height="367" key="GridCell.Tab.1.right/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661453058" />
     <state x="1890" y="-672" key="SettingsEditor" timestamp="1580650151155">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
     <state x="1890" y="-672" key="SettingsEditor/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580650151155" />
-    <state x="2594" y="-335" key="Vcs.Push.Dialog.v2" timestamp="1580657021826">
+    <state x="2594" y="-335" key="Vcs.Push.Dialog.v2" timestamp="1580662297658">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
-    <state x="2594" y="-335" key="Vcs.Push.Dialog.v2/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580657021826" />
+    <state x="2594" y="-335" key="Vcs.Push.Dialog.v2/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580662297658" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/src/service/api.go</url>
-          <line>102</line>
+          <line>101</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
