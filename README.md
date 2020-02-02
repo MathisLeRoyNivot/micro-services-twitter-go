@@ -10,7 +10,7 @@
 
 ## Installation :gear:
 ### First step
-Create a `.env` file in the following path `micro-services-twitter-go/src/service` and put these different environment variables to be able to connect the MongoDB cluster : 
+Create a `.env` file in the root path of the project and put these different environment variables to be able to connect the MongoDB cluster : 
 ```env
 # MongoDB - Database credentials
 DB_USERNAME=<your_username>

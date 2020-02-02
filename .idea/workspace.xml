@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="facd1029-f6ec-47f5-bfb5-a5e3a0329f40" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/service/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/dao/rating_dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/models/rating.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,13 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -50,6 +59,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -63,6 +73,11 @@
     <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="go build micro-services-twitter-go/src/service" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -97,7 +112,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(app): adding .env support + updating api::main() function" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(app): adding .env support + updating api::main() function" />
+    <MESSAGE value="feat(app): updating README.md file" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(app): updating README.md file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="722" y="75" key="#Build_Tags_&amp;_Vendoring" timestamp="1579522842442">
@@ -133,33 +149,60 @@
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
     <state x="2757" y="-261" key="#com.intellij.fileTypes.FileTypeChooser/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580650088679" />
-    <state x="2596" y="-556" key="CommitChangelistDialog2" timestamp="1580655462451">
+    <state x="2596" y="-556" key="CommitChangelistDialog2" timestamp="1580657017817">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
-    <state x="2596" y="-556" key="CommitChangelistDialog2/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580655462451" />
-    <state width="2584" height="407" key="GridCell.Tab.0.bottom" timestamp="1580650092707">
+    <state x="2596" y="-556" key="CommitChangelistDialog2/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580657017817" />
+    <state width="1161" height="269" key="GridCell.Tab.0.bottom" timestamp="1580661390824">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
-    <state width="2584" height="407" key="GridCell.Tab.0.bottom/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580650092707" />
-    <state width="2584" height="407" key="GridCell.Tab.0.center" timestamp="1580650092706">
+    <state width="1161" height="269" key="GridCell.Tab.0.bottom/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661390824" />
+    <state width="1161" height="269" key="GridCell.Tab.0.center" timestamp="1580661390823">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
-    <state width="2584" height="407" key="GridCell.Tab.0.center/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580650092706" />
-    <state width="2584" height="407" key="GridCell.Tab.0.left" timestamp="1580650092706">
+    <state width="1161" height="269" key="GridCell.Tab.0.center/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661390823" />
+    <state width="1161" height="269" key="GridCell.Tab.0.left" timestamp="1580661390822">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
-    <state width="2584" height="407" key="GridCell.Tab.0.left/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580650092706" />
-    <state width="2584" height="407" key="GridCell.Tab.0.right" timestamp="1580650092707">
+    <state width="1161" height="269" key="GridCell.Tab.0.left/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661390822" />
+    <state width="1161" height="269" key="GridCell.Tab.0.right" timestamp="1580661390823">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
-    <state width="2584" height="407" key="GridCell.Tab.0.right/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580650092707" />
+    <state width="1161" height="269" key="GridCell.Tab.0.right/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661390823" />
+    <state width="2322" height="367" key="GridCell.Tab.1.bottom" timestamp="1580661453058">
+      <screen x="1680" y="-779" width="3440" height="1417" />
+    </state>
+    <state width="2322" height="367" key="GridCell.Tab.1.bottom/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661453058" />
+    <state width="2322" height="367" key="GridCell.Tab.1.center" timestamp="1580661453058">
+      <screen x="1680" y="-779" width="3440" height="1417" />
+    </state>
+    <state width="2322" height="367" key="GridCell.Tab.1.center/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661453058" />
+    <state width="2322" height="367" key="GridCell.Tab.1.left" timestamp="1580661453057">
+      <screen x="1680" y="-779" width="3440" height="1417" />
+    </state>
+    <state width="2322" height="367" key="GridCell.Tab.1.left/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661453057" />
+    <state width="2322" height="367" key="GridCell.Tab.1.right" timestamp="1580661453058">
+      <screen x="1680" y="-779" width="3440" height="1417" />
+    </state>
+    <state width="2322" height="367" key="GridCell.Tab.1.right/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580661453058" />
     <state x="1890" y="-672" key="SettingsEditor" timestamp="1580650151155">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
     <state x="1890" y="-672" key="SettingsEditor/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580650151155" />
-    <state x="2594" y="-335" key="Vcs.Push.Dialog.v2" timestamp="1580655467906">
+    <state x="2594" y="-335" key="Vcs.Push.Dialog.v2" timestamp="1580657021826">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
-    <state x="2594" y="-335" key="Vcs.Push.Dialog.v2/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580655467906" />
+    <state x="2594" y="-335" key="Vcs.Push.Dialog.v2/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580657021826" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/service/api.go</url>
+          <line>102</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
