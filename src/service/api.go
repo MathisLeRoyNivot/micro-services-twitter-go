@@ -14,6 +14,8 @@ import (
 	"net/http"
 	"os"
 	"time"
+
+	. "github.com/MathisLeRoyNivot/micro-services-twitter-go/src/service/dao"
 )
 
 // use godot package to load/read the .env file and
