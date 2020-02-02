@@ -2,24 +2,41 @@ package main
 
 import (
 	"context"
-	"fmt"
-	"log"
-	"net/http"
 	"encoding/json"
+	"fmt"
 	"github.com/gorilla/mux"
+	"github.com/joho/godotenv"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
+	"log"
+	"net/http"
+	"os"
 	"time"
 )
 
-type Rating struct {
-	Id string `json:"Id"`
-	Twitter_id string `json:"twitter_id"`
-	Rated_twitter_id string `json:"rated_twitter_id"`
-	Note string `json:"note"`
+// use godot package to load/read the .env file and
+// return the value of the key
+func goDotEnvVariable(key string) string {
+
+	// load .env file
+	err := godotenv.Load(".env")
+
+	if err != nil {
+		log.Fatalf("Error loading .env file")
+	}
+
+	return os.Getenv(key)
 }
+
+type Rating struct {
+	Id               string `json:"Id"`
+	Twitter_id       string `json:"twitter_id"`
+	Rated_twitter_id string `json:"rated_twitter_id"`
+	Note             string `json:"note"`
+}
+
 func allRating(w http.ResponseWriter, r *http.Request) {
-	rate := Rating{Id:"1", Twitter_id:"1", Rated_twitter_id:"2", Note:"5"}
+	rate := Rating{Id: "1", Twitter_id: "1", Rated_twitter_id: "2", Note: "5"}
 	fmt.Println("Voici une note pour ce tweet")
 	json.NewEncoder(w).Encode(rate)
 }
@@ -41,8 +58,13 @@ func handleRequests() {
 }
 
 func main() {
+	// godotenv package
+	username := goDotEnvVariable("DB_USERNAME")
+	password := goDotEnvVariable("DB_PASSWORD")
+	dbAddress := goDotEnvVariable("DB_ADDRESS")
+
 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-	client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb+srv://geoffrey:NR0ONP0dl9n1amLB@cluster0-h7zuk.mongodb.net/test?retryWrites=true&w=majority"))
+	client, err := mongo.Connect(ctx, options.Client().ApplyURI(fmt.Sprintf("mongodb+srv://%s:%s@%s/test?retryWrites=true&w=majority", username, password, dbAddress)))
 	if err != nil {
 		log.Fatal(err)
 	}
