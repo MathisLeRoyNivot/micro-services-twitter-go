@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="facd1029-f6ec-47f5-bfb5-a5e3a0329f40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/Gopkg.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/dao/rating_dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/dao/rating_dao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/models/rating.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/models/rating.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,8 @@
     <MESSAGE value="feat(app): adding .env support + updating api::main() function" />
     <MESSAGE value="feat(app): updating README.md file" />
     <MESSAGE value="feat(app): adding DAO + Models" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(app): adding DAO + Models" />
+    <MESSAGE value="feat(app): updating DAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(app): updating DAO" />
   </component>
   <component name="WindowStateProjectService">
     <state x="722" y="75" key="#Build_Tags_&amp;_Vendoring" timestamp="1579522842442">
@@ -148,9 +149,10 @@
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
     <state x="2757" y="-261" key="#com.intellij.fileTypes.FileTypeChooser/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580650088679" />
-    <state x="2596" y="-556" key="CommitChangelistDialog2" timestamp="1580662293931">
+    <state x="2596" y="-556" key="CommitChangelistDialog2" timestamp="1580665879661">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
+    <state x="2596" y="-556" key="CommitChangelistDialog2/1680.-779.3440.1417/0.23.1680.1027@1680.-779.3440.1417" timestamp="1580665879661" />
     <state x="2596" y="-556" key="CommitChangelistDialog2/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580662293931" />
     <state width="2322" height="367" key="GridCell.Tab.0.bottom" timestamp="1580663518521">
       <screen x="1680" y="-779" width="3440" height="1417" />
@@ -196,9 +198,10 @@
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
     <state x="1890" y="-672" key="SettingsEditor/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580650151155" />
-    <state x="2594" y="-335" key="Vcs.Push.Dialog.v2" timestamp="1580662297658">
+    <state x="2594" y="-335" key="Vcs.Push.Dialog.v2" timestamp="1580665883515">
       <screen x="1680" y="-779" width="3440" height="1417" />
     </state>
+    <state x="2594" y="-335" key="Vcs.Push.Dialog.v2/1680.-779.3440.1417/0.23.1680.1027@1680.-779.3440.1417" timestamp="1580665883515" />
     <state x="2594" y="-335" key="Vcs.Push.Dialog.v2/1680.-779.3440.1417/0.23.1680.977@1680.-779.3440.1417" timestamp="1580662297658" />
   </component>
   <component name="XDebuggerManager">

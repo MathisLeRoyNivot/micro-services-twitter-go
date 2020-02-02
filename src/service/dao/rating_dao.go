@@ -1,10 +1,10 @@
 package dao
 
 import (
-	. "../models/rating.go"
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 	"log"
+	. "micro-services-twitter-go/src/service/models/rating.go"
 )
 
 type RatingsDAO struct {
