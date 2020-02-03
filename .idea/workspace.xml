@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="37e75a1d-da71-4790-9c33-e9c9746bf0f6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ratings_dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ratings_dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/rating.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/rating.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1XGEJ7ImVI2TCTIpIZDUFNAH4wk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.dep.integrator" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\goGit\go_services\src" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="miammiam" />
+    <option name="LAST_COMMIT_MESSAGE" value="miammiam" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="722" y="75" key="#Go_Modules_(vgo)" timestamp="1580663977750">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="75" key="#Go_Modules_(vgo)/0.0.1536.824@0.0.1536.824" timestamp="1580663977750" />
+    <state x="522" y="216" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580671301044">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="522" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1580671301044" />
+    <state x="347" y="0" key="CommitChangelistDialog2" timestamp="1580681779090">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="347" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580681779090" />
+  </component>
+</project>

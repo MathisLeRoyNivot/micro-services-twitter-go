@@ -1,0 +1,4 @@
+db_username="geoffrey"
+db_password="NR0ONP0dl9n1amLB"
+db_address="cluster0-h7zuk.mongodb.net"
+database="twitter_microservices_api"

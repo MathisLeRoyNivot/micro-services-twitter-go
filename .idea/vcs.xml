@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/BurntSushi/toml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/Geoffrey-max/go_services" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/gorilla/mux" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/mongodb/mongo-go-driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gopkg.in/mgo.v2" vcs="Git" />
+  </component>
+</project>
