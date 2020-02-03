@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Services.iml" filepath="$PROJECT_DIR$/.idea/Services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/services-twitter-go.iml" filepath="$PROJECT_DIR$/.idea/services-twitter-go.iml" />
     </modules>
   </component>
 </project>
